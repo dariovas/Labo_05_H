@@ -34,8 +34,23 @@ int saisie (const int& min, const int& max, const string& msgEntree, const strin
 
 
 int main() {
-   std::cout << "Hello, World!" << std::endl;
-   return 0;
+   //Déclaration des variables
+   const int VALEUR_MIN = 2;
+   const int VALEUR_MAX = 100;
+   const string msgEntree = "Veuillez entrer une annee entre : ";
+   const string msgErreur = "Cette entree est incorrecte, veuillez recommencer.\n";
+   int n; //
+
+   n = saisie(VALEUR_MIN, VALEUR_MAX, msgEntree, msgErreur);
+   vector<char> tab(n, 'x');
+
+   afficherVecteur(tab);
+
+   criblage(tab);
+
+   afficherVecteur(tab);
+
+   return EXIT_SUCCESS;
 }
 
 //fonctions
