@@ -21,7 +21,7 @@
 #include "iomanip"
 #include "eratosthene.h"
 
-int saisie (int min, int max, const std::string& msgEntree, const std::string& msgErreur);
+int saisie (const int min, const int max, const std::string& msgEntree, const std::string& msgErreur);
 void clear_buffer();
 std::ostream& operator<<(std::ostream& os, std::vector<int> vec);
 std::ostream& operator<<(std::ostream& os, std::vector<Premier> vec);

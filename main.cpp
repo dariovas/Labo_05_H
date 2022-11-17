@@ -47,7 +47,7 @@ int main() {
    vector<Premier> tab(n, Premier::pasPremier);
 
    cout << "criblage du tableau" << endl;
-   cout << criblage(tab);
+   cout << criblage(tab) << endl;
 
    cout << "nombre premiers" << endl;
    cout << nbrPremiers(tab);

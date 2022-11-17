@@ -18,7 +18,7 @@ void clear_buffer(){
    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
-int saisie (const int& min, const int& max, const string& msgEntree, const string& msgErreur){
+int saisie (const int min, const int max, const std::string& msgEntree, const std::string& msgErreur){
 
    // Déclaration de variables internes
    int saisie;
