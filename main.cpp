@@ -39,18 +39,23 @@ int main() {
    //Déclaration des variables
    const int VALEUR_MIN = 2;
    const int VALEUR_MAX = 100;
-   const string msgEntree = "Veuillez entrer une annee entre : ";
+   const string msgEntree = "nbre de valeurs [2..100] : ";
    const string msgErreur = "Cette entree est incorrecte, veuillez recommencer.\n";
    int n; //
 
-   n = saisie(VALEUR_MIN, VALEUR_MAX, msgEntree, msgErreur);
-   vector<Premier> tab(n, Premier::pasPremier);
+   cout  << "ce programme ..." << endl << endl;
+   cout  << "nbre de valeurs ["
+         << VALEUR_MIN << ".. "
+         << VALEUR_MAX << "] : " << endl;
 
-   cout << "criblage du tableau" << endl;
-   cout << criblage(tab) << endl;
+   n = saisie(VALEUR_MIN, VALEUR_MAX, msgErreur);
+   vector<Premier> tab(n, Premier::premier);
 
-   cout << "nombre premiers" << endl;
-   cout << nbrPremiers(tab);
+   cout  << "criblage du tableau" << endl;
+   cout  << criblage(tab) << endl;
+
+   cout  << "liste des nbres 1er";
+   cout  << nbrPremiers(tab);
 
    return EXIT_SUCCESS;
 }

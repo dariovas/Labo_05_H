@@ -15,7 +15,7 @@
 
 #include <vector>
 
-enum Premier {pasPremier, premier};
+enum class Premier {pasPremier, premier};
 
 std::vector<Premier> criblage(std::vector<Premier>&);
 std::vector<int>nbrPremiers(const std::vector<Premier>&);
