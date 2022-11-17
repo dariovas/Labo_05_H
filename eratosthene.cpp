@@ -11,8 +11,11 @@
 //---------------------------------------------------------
 
 #include "eratosthene.h"
+#include "outils.h"
 
-void criblage(std::vector<char>& tab){
+
+
+std::vector<Premier> criblage(std::vector<Premier>& tab){
    for(size_t i = 0; i < tab.size(); ++i){
       if(i == 0 || i == 1){
          tab.at(i) = Premier::pasPremier;

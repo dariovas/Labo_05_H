@@ -14,7 +14,8 @@
  * A faire :
  *    - changer les entetes selon les buts du fichiers (librairies outils peut avoir le meme but pour le h et le cpp)
  *    - Commenter les entetes des fonctions + code
- *    - Faire fonctions nbPremiers
+ *    - Faire fonction nbPremiers
+ *    - Cout
  *    - Regarder si des sous fonctions sont possibles
  *    - include & warning
  *    - constante char x et o
@@ -30,7 +31,7 @@
 using namespace std;
 
 //entetes
-int saisie (const int& min, const int& max, const string& msgEntree, const string& msgErreur);
+
 
 
 
@@ -43,7 +44,7 @@ int main() {
    int n; //
 
    n = saisie(VALEUR_MIN, VALEUR_MAX, msgEntree, msgErreur);
-   vector<char> tab(n, 'x');
+   vector<Premier> tab(n, Premier::pasPremier);
 
    cout << "criblage du tableau" << endl;
    cout << criblage(tab);

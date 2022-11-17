@@ -23,5 +23,7 @@
 
 int saisie (int min, int max, const std::string& msgEntree, const std::string& msgErreur);
 void clear_buffer();
+std::ostream& operator<<(std::ostream& os, std::vector<int> vec);
+std::ostream& operator<<(std::ostream& os, std::vector<Premier> vec);
 
 #endif //LABO_05_H_OUTILS_H

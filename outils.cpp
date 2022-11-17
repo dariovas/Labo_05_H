@@ -42,16 +42,28 @@ int saisie (const int& min, const int& max, const string& msgEntree, const strin
    return saisie;
 }
 
-void afficherVecteur(const vector<char> vec){
-   cout << "[";
-   if(vec.size() != 0){
-      for(size_t i = 0; i < vec.size(); ++i){
+ostream& operator<<(ostream& os, vector<int> vec){
+   for(size_t i = 0; i < vec.size(); ++i){
          // Rajoute une virgule uniquement à partir du 2ème élément du tableau
-         if(i > 0){
-            cout << ", ";
+         if(i % 10 == 0){
+            os << endl;
          }
-         cout << vec[i];
+         os << setw(2) << vec[i] << " ";
+      }
+   return os;
+}
+
+ostream& operator<<(ostream& os, vector<Premier> vec){
+
+   for(size_t i = 0; i < vec.size(); ++i) {
+      if (i % 10 == 0) {
+         os << endl;
+      }
+      if(vec[i] == Premier::premier){
+         os << setw(2) << 'x' << " ";
+      }else{
+         os << setw(2) << 'o' << " ";
       }
    }
-   cout << "]" << endl;
+   return os;
 }
