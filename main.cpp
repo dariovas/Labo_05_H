@@ -17,6 +17,7 @@
  *    - Faire fonctions nbPremiers
  *    - Regarder si des sous fonctions sont possibles
  *    - include & warning
+ *    - constante char x et o
  */
 
 #include <cstdlib>  //EXIT_SUCCESS
@@ -44,11 +45,11 @@ int main() {
    n = saisie(VALEUR_MIN, VALEUR_MAX, msgEntree, msgErreur);
    vector<char> tab(n, 'x');
 
-   afficherVecteur(tab);
+   cout << "criblage du tableau" << endl;
+   cout << criblage(tab);
 
-   criblage(tab);
-
-   afficherVecteur(tab);
+   cout << "nombre premiers" << endl;
+   cout << nbrPremiers(tab);
 
    return EXIT_SUCCESS;
 }

@@ -18,9 +18,10 @@
 #include <vector>
 #include "string"
 #include <iostream>
+#include "iomanip"
+#include "eratosthene.h"
 
-int saisie (const int& min, const int& max, const std::string& msgEntree, const std::string& msgErreur);
-void afficherVecteur(const std::vector<char>);
+int saisie (int min, int max, const std::string& msgEntree, const std::string& msgErreur);
 void clear_buffer();
 
 #endif //LABO_05_H_OUTILS_H

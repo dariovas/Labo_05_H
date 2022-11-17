@@ -15,8 +15,10 @@
 
 #include <vector>
 
-void criblage(std::vector<char>&);
-std::vector<int>nbrPremiers(const std::vector<char>&);
+enum class Premier {pasPremier, premier};
+
+std::vector<Premier> criblage(std::vector<Premier>&);
+std::vector<int>nbrPremiers(const std::vector<Premier>&);
 
 
 #endif //LABO_05_H_ERATOSTHENE_H
