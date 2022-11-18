@@ -1,6 +1,6 @@
 //---------------------------------------------------------
 // Fichier        : Labo_05_H.cpp
-// Auteur(s)      : Piollet Lionel & Vasques Dario
+// Auteur(s)      : Pollien Lionel & Vasques Dario
 // But            : Application permettant de calculer et afficher
 //                : le calendrier d'une année donnée en paramètre.
 // Modifications  :
@@ -11,9 +11,6 @@
 //---------------------------------------------------------
 
 #include "eratosthene.h"
-#include "outils.h"
-
-
 
 std::vector<Premier> criblage(std::vector<Premier>& tab){
    for(size_t i = 0; i < tab.size(); ++i){

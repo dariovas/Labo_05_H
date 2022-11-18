@@ -1,6 +1,6 @@
 //---------------------------------------------------------
 // Fichier        : Labo_05_H.cpp
-// Auteur(s)      : Piollet Lionel & Vasques Dario
+// Auteur(s)      : Pollien Lionel & Vasques Dario
 // But            : Application permettant de calculer et afficher
 //                : le calendrier d'une année donnée en paramètre.
 // Modifications  :
@@ -43,25 +43,25 @@ int saisie (const int min, const int max, const std::string& msgErreur){
 
 ostream& operator<<(ostream& os, vector<int> vec){
    for(size_t i = 0; i < vec.size(); ++i){
-         // Rajoute une virgule uniquement à partir du 2ème élément du tableau
+         // Rajoute un retour à la ligne dès que 10 éléments ont été affichés
          if(i % 10 == 0){
             os << endl;
          }
-         os << setw(2) << vec[i] << " ";
+         os << setw(2) << vec.at(i) << " ";
       }
    return os;
 }
 
 ostream& operator<<(ostream& os, vector<Premier> vec){
-
    for(size_t i = 0; i < vec.size(); ++i) {
       if (i % 10 == 0) {
          os << endl;
       }
-      if(vec[i] == Premier::premier){
-         os << setw(2) << 'x' << " ";
+
+      if(vec.at(i) == Premier::premier){
+         os << setw(2) << SYMBOLE_X << " ";
       }else{
-         os << setw(2) << 'o' << " ";
+         os << setw(2) << SYMBOLE_O << " ";
       }
    }
    return os;

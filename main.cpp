@@ -1,6 +1,6 @@
 //---------------------------------------------------------
 // Fichier        : Labo_05_H.cpp
-// Auteur(s)      : Piollet Lionel & Vasques Dario
+// Auteur(s)      : Pollien Lionel & Vasques Dario
 // But            : Application permettant de calculer et afficher
 //                : le calendrier d'une année donnée en paramètre.
 // Modifications  :
@@ -14,11 +14,11 @@
  * A faire :
  *    - changer les entetes selon les buts du fichiers (librairies outils peut avoir le meme but pour le h et le cpp)
  *    - Commenter les entetes des fonctions + code
- *    - Faire fonction nbPremiers
- *    - Cout
+ *    - Faire fonction nbPremiers --> fait
+ *    - Cout --> fait
  *    - Regarder si des sous fonctions sont possibles
  *    - include & warning
- *    - constante char x et o
+ *    - constante char x et o --> fait
  */
 
 #include <cstdlib>  //EXIT_SUCCESS
@@ -26,41 +26,33 @@
 #include "eratosthene.h"
 #include "outils.h"
 
-
-
 using namespace std;
-
-//entetes
-
-
-
 
 int main() {
    //Déclaration des variables
    const int VALEUR_MIN = 2;
    const int VALEUR_MAX = 100;
-   const string msgEntree = "nbre de valeurs [2..100] : ";
    const string msgErreur = "Cette entree est incorrecte, veuillez recommencer.\n";
    int n; //
 
-   cout  << "ce programme ..." << endl << endl;
+   cout  << "ce programme ..."   << endl << endl;
    cout  << "nbre de valeurs ["
          << VALEUR_MIN << ".. "
-         << VALEUR_MAX << "] : " << endl;
+         << VALEUR_MAX << "] : ";
 
    n = saisie(VALEUR_MIN, VALEUR_MAX, msgErreur);
-   vector<Premier> tab(n, Premier::premier);
+
+   // Initialisation du vecteur de départ
+   vector<Premier> tab((size_t)n, Premier::premier);
 
    cout  << "criblage du tableau" << endl;
-   cout  << criblage(tab) << endl;
+   cout  << criblage(tab)  << endl << endl;
 
    cout  << "liste des nbres 1er";
    cout  << nbrPremiers(tab);
 
    return EXIT_SUCCESS;
 }
-
-//fonctions
 
 
 
