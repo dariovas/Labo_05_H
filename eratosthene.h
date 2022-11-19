@@ -1,8 +1,8 @@
 //---------------------------------------------------------
-// Fichier        : Labo_05_H.cpp
+// Fichier        : eratosthene.h
 // Auteur(s)      : Pollien Lionel & Vasques Dario
-// But            : Application permettant de calculer et afficher
-//                : le calendrier d'une année donnée en paramètre.
+// But            : Fichier permettant de cribler le tableau
+//                : et de récupérer les nombres premiers.
 // Modifications  :
 // Remarque(s)    : -
 // Compilation :
@@ -15,9 +15,18 @@
 
 #include <vector>
 
+// Déclaration de l'enum dont les valeurs seront stockées dans le vecteur criblage
 enum class Premier {pasPremier, premier};
 
+// Cette fonction permet de cribler le tableau
+// Explication des paramètres :
+// vector<Premier>&           : vecteur contenant les cases des nombres étant premiers
 std::vector<Premier> criblage(std::vector<Premier>&);
+
+
+// Cette fonction permet de recupérer les nombres premiers étant dans le tableau criblé
+// Explication des paramètres :
+// const vector<Premier>&     : vecteur criblé
 std::vector<int>nbrPremiers(const std::vector<Premier>&);
 
 

@@ -1,8 +1,7 @@
 //---------------------------------------------------------
-// Fichier        : Labo_05_H.cpp
+// Fichier        : outils.cpp
 // Auteur(s)      : Pollien Lionel & Vasques Dario
-// But            : Application permettant de calculer et afficher
-//                : le calendrier d'une année donnée en paramètre.
+// But            : Fichier contenant l'algorithme de saisie et de modification du flux cout.
 // Modifications  :
 // Remarque(s)    : -
 // Compilation :
@@ -19,7 +18,6 @@ void clear_buffer(){
 }
 
 int saisie (const int min, const int max, const std::string& msgErreur){
-
    // Déclaration de variables internes
    int saisie;
    bool erreur;
@@ -44,24 +42,24 @@ int saisie (const int min, const int max, const std::string& msgErreur){
 ostream& operator<<(ostream& os, vector<int> vec){
    for(size_t i = 0; i < vec.size(); ++i){
          // Rajoute un retour à la ligne dès que 10 éléments ont été affichés
-         if(i % 10 == 0){
+         if(i % NB_ELEMENTS_LIGNE == 0){
             os << endl;
          }
-         os << setw(2) << vec.at(i) << " ";
+         os << setw(LARGEUR_NBR) << vec.at(i) << " ";
       }
    return os;
 }
 
 ostream& operator<<(ostream& os, vector<Premier> vec){
    for(size_t i = 0; i < vec.size(); ++i) {
-      if (i % 10 == 0) {
+      if (i % NB_ELEMENTS_LIGNE == 0) {
          os << endl;
       }
 
       if(vec.at(i) == Premier::premier){
-         os << setw(2) << SYMBOLE_X << " ";
+         os << setw(LARGEUR_NBR) << SYMBOLE_X << " ";
       }else{
-         os << setw(2) << SYMBOLE_O << " ";
+         os << setw(LARGEUR_NBR) << SYMBOLE_O << " ";
       }
    }
    return os;

@@ -1,8 +1,8 @@
 //---------------------------------------------------------
-// Fichier        : Labo_05_H.cpp
+// Fichier        : eratosthene.cpp
 // Auteur(s)      : Pollien Lionel & Vasques Dario
-// But            : Application permettant de calculer et afficher
-//                : le calendrier d'une année donnée en paramètre.
+// But            : Fichier contenant l'algorithme de criblage
+//                : et de récupération des nombres premiers.
 // Modifications  :
 // Remarque(s)    : -
 // Compilation :

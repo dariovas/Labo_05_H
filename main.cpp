@@ -1,8 +1,8 @@
 //---------------------------------------------------------
-// Fichier        : Labo_05_H.cpp
+// Fichier        : main.cpp
 // Auteur(s)      : Pollien Lionel & Vasques Dario
-// But            : Application permettant de calculer et afficher
-//                : le calendrier d'une année donnée en paramètre.
+// But            : Application permettant de cribler un tableau de N valeurs (saisie par l'utilisateur)
+//                : puis de récupérer les nombres premiers de ce dernier.
 // Modifications  :
 // Remarque(s)    : -
 // Compilation :
