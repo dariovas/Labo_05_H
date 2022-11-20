@@ -2,12 +2,13 @@
 // Fichier        : eratosthene.cpp
 // Auteur(s)      : Pollien Lionel & Vasques Dario
 // But            : Fichier contenant l'algorithme de criblage
-//                : et de récupération des nombres premiers.
+//                  et de récupération des nombres premiers.
 // Modifications  :
 // Remarque(s)    : -
 // Compilation :
 //    - Version C++ : 20
-//    - Compilateur : Mingw-w64 g++ 12.2.0 (lionel) Apple clang version 14.0.0 (Dario)
+//    - Compilateur : Mingw-w64 g++ 12.2.0 (Lionel)
+//                    Apple clang version 14.0.0 (Dario)
 //---------------------------------------------------------
 
 #include "eratosthene.h"
