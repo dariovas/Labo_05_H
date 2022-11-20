@@ -14,9 +14,9 @@
 //---------------------------------------------------------
 
 
-#include <cstdlib> //EXIT_SUCCESS
-#include "eratosthene.h"
-#include "outils.h"
+#include <cstdlib>         //EXIT_SUCCESS
+#include "eratosthene.h"   //enum class Premier, criblage du tableau et récupération des nbr premiers
+#include "outils.h"        //saisie de l'utilisateur et surcharge du flux cout pour afficher les vecteur
 
 using namespace std;
 

@@ -42,6 +42,7 @@ const int  NB_ELEMENTS_LIGNE     = 10;
  */
 int saisie (int, int, const std::string&);
 
+
 /**
  * @brief   fonction pour vider le buffer
  */
@@ -52,6 +53,7 @@ void clear_buffer();
  *          l'affichage de vecteur de type int
  */
 std::ostream& operator<<(std::ostream& os, std::vector<int> vec);
+
 
 /**
  * @brief   surcharge de l'opérateur "<<" pour faciliter

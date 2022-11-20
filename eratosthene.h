@@ -29,6 +29,7 @@ enum class Premier {pasPremier, premier};
  */
 std::vector<Premier> criblage(std::vector<Premier>&);
 
+
 /**
  * @brief   Fonction pour récupérer les nombres premiers
  *          dans le tableau criblé
