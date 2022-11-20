@@ -10,10 +10,10 @@
 //    - Compilateur : Mingw-w64 g++ 12.2.0 (lionel) Apple clang version 14.0.0 (Dario)
 //---------------------------------------------------------
 
-#include <cstdlib>  //EXIT_SUCCESS
-#include <vector>
-#include "eratosthene.h"
-#include "outils.h"
+#include <cstdlib>         //EXIT_SUCCESS
+#include <vector>          //utilisation des vecteurs
+#include "eratosthene.h"   //enum class Premier, criblage du tableau et nbrPremiers
+#include "outils.h"        //demande de saisie
 
 using namespace std;
 
