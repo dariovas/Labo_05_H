@@ -21,11 +21,11 @@
 enum class Premier {pasPremier, premier};
 
 /**
- * @brief Fonction pour cribler un tableau
+ * @brief   Fonction pour cribler un tableau
  *
- * @param vector<Premier>&
- *        vecteur contenant les entiers en 2 et N
- * @return retourne le vecteur cribler
+ * @param   vector<Premier>&
+ *          vecteur contenant les entiers en 2 et N
+ * @return  retourne le vecteur cribler
  */
 std::vector<Premier> criblage(std::vector<Premier>&);
 
