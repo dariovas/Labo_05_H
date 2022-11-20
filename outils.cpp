@@ -40,7 +40,7 @@ int saisie (const int min, const int max, const std::string& msgErreur){
    return saisie;
 }
 
-std::ostream& operator<<(std::ostream& os, std::vector<int> vec){
+std::ostream& operator<<(std::ostream& os, const std::vector<int> vec){
    for(size_t i = 0; i < vec.size(); ++i){
          // Rajoute un retour à la ligne dès que 10 éléments ont été affichés
          if(i % NB_ELEMENTS_LIGNE == 0){
@@ -51,7 +51,7 @@ std::ostream& operator<<(std::ostream& os, std::vector<int> vec){
    return os;
 }
 
-std::ostream& operator<<(std::ostream& os, std::vector<Premier> vec){
+std::ostream& operator<<(std::ostream& os, const std::vector<Premier> vec){
    for(size_t i = 0; i < vec.size(); ++i) {
       // Rajoute un retour à la ligne dès que 10 éléments ont été affichés
       if (i % NB_ELEMENTS_LIGNE == 0) {

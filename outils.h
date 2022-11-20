@@ -51,12 +51,12 @@ void clear_buffer();
  * @brief   surchage de l'opérateur "<<" pour faciliter
  *          l'affichage de vecteur de type int
  */
-std::ostream& operator<<(std::ostream& os, std::vector<int> vec);
+std::ostream& operator<<(std::ostream& os, const std::vector<int> vec);
 
 /**
  * @brief   surcharge de l'opérateur "<<" pour faciliter
  *          l'affichage de vecteur de type Enum Class Premier
  */
-std::ostream& operator<<(std::ostream& os, std::vector<Premier> vec);
+std::ostream& operator<<(std::ostream& os, const std::vector<Premier> vec);
 
 #endif //LABO_05_H_OUTILS_H
