@@ -26,15 +26,16 @@ int main() {
 
    cout  << "ce programme ..."   << endl << endl;
    cout  << "nbre de valeurs ["
-         << VALEUR_MIN << ".. "
-         << VALEUR_MAX << "] : ";
+         << VALEUR_MIN           << ".."
+         << VALEUR_MAX           << "] : ";
 
    n = saisie(VALEUR_MIN, VALEUR_MAX, msgErreur);
 
    // Initialisation du vecteur de départ
    vector<Premier> tab((size_t)n, Premier::premier);
 
-   cout  << "criblage du tableau" << endl;
+   cout  << endl;
+   cout  << "criblage du tableau";
    cout  << criblage(tab)  << endl << endl;
 
    cout  << "liste des nbres 1er";
