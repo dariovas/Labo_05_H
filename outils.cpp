@@ -53,6 +53,7 @@ std::ostream& operator<<(std::ostream& os, std::vector<int> vec){
 
 std::ostream& operator<<(std::ostream& os, std::vector<Premier> vec){
    for(size_t i = 0; i < vec.size(); ++i) {
+      // Rajoute un retour à la ligne dès que 10 éléments ont été affichés
       if (i % NB_ELEMENTS_LIGNE == 0) {
          os << std::endl;
       }
